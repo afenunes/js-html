@@ -3,7 +3,6 @@ function div(options, content = '') {
     let result = '<div ';
     Object.entries(options).forEach(([key, value]) => {
       result += `${key}="${value}"`;
-      console.log(`${key}="${value}"`);
     });
     return `${result}>${content}</div>`;
   }

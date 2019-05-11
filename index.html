@@ -13,13 +13,19 @@
     <script src="abbr.js"></script>
     <script src="acronym.js"></script>
     <script src="div.js"></script>
+    <script type="module" src="./internal/li.js"></script>
     <script>
         const array = ['ola', 'adeus', 'ola', 'adeus'];
         const options = {
             style: "background: black",
             class: "ola"
         };
-        document.getElementById("div").innerHTML = div(options, 'Google');
+        document.getElementById("div").innerHTML =
+            ul({
+                    class: "ola"
+                },
+                array
+            );
     </script>
 </body>
 
