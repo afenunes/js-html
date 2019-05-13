@@ -1,5 +1,5 @@
 {
-  "name": "js-html",
+  "name": "jsdothtml",
   "version": "1.0.0",
   "description": "Easy way to generate Html using JavaScript",
   "main": "index.js",

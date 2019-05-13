@@ -9,7 +9,7 @@ With this library you can generate html using Javascript code.
 ## Usage
 
 ```js
-    document.getElementById("yourDiv").innerHTML = div(
+    document.getElementById("yourDiv").innerHTML = jsdothtml.div(
         {
             class: "amazing",
             ...
