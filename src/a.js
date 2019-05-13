@@ -4,3 +4,5 @@ function a(href, content = '') {
   }
   return `<a>${content}</a>`;
 }
+
+export default a;

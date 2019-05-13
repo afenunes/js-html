@@ -1,32 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>li</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="div"></div>
-    <script src="ul.js"></script>
-    <script src="a.js"></script>
-    <script src="abbr.js"></script>
-    <script src="acronym.js"></script>
-    <script src="div.js"></script>
-    <script type="module" src="./internal/li.js"></script>
+    <script src="./_build/bundle.js"></script>
     <script>
-        const array = ['ola', 'adeus', 'ola', 'adeus'];
-        const options = {
-            style: "background: black",
-            class: "ola"
-        };
-        document.getElementById("div").innerHTML =
-            ul({
-                    class: "ola"
-                },
-                array
-            );
+      document.getElementById("div").innerHTML = afen.a("ola", "ola");
     </script>
-</body>
-
+  </body>
 </html>

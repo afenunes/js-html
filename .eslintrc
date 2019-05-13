@@ -3,5 +3,8 @@
     "parser": "babel-eslint",
     "rules": {
         "no-unused-vars": "off"
-    }
+    },
+    "overrides": [{
+        "files": ["bundle/*.js", "lib/internal/*.js", "lib/*.js"]
+    }]
 }
