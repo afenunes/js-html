@@ -1,10 +1,11 @@
 import li from './internal/li';
+import tag from './internal/tag';
 
-function ul(options, items) {
-  const content = items.map(item => li(item).join(''));
-  if (options) {
-    let result = '<ul ';
-    Object.entries(options).forEach(([key, value]) => {
+function ulFromArray(attributes, items) {
+  const content = items.map(item => li(item)).join('');
+  if (attributes) {
+    let result = '<ul';
+    Object.entries(attributes).forEach(([key, value]) => {
       result += `${key}="${value}"`;
     });
     return `${result}>${content}</ul>`;
@@ -12,4 +13,12 @@ function ul(options, items) {
   return `<ul>${content}</ul>`;
 }
 
-export default ul;
+
+function ul(attributes, content = '') {
+  return tag(attributes, content, 'ul');
+}
+
+export {
+  ul,
+  ulFromArray,
+};

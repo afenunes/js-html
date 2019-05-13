@@ -1,6 +1,7 @@
-function abbr(title, content = '') {
-  if (title) {
-    return `<abbr title="${title}">${content}</abbr>`;
-  }
-  return `<abbr>${content}</abbr>`;
+import tag from './internal/tag';
+
+function abbr(attributes, content = '') {
+  return tag(attributes, content, 'abbr');
 }
+
+export default abbr;

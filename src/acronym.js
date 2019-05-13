@@ -1,6 +1,7 @@
-function acronym(title, content = '') {
-  if (title) {
-    return `<acronym title="${title}">${content}</acronym>`;
-  }
-  return `<acronym>${content}</acronym>`;
+import tag from './internal/tag';
+
+function acronym(attributes, content = '') {
+  return tag(attributes, content, 'acronym');
 }
+
+export default acronym;

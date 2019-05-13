@@ -1,12 +1,7 @@
-module.exports = {
-  div(options, content = '') {
-    if (options) {
-      let result = '<div ';
-      Object.entries(options).forEach(([key, value]) => {
-        result += `${key}="${value}"`;
-      });
-      return `${result}>${content}</div>`;
-    }
-    return `<div>${content}</div>`;
-  },
-};
+import tag from './internal/tag';
+
+function div(attributes, content = '') {
+  return tag(attributes, content, 'div');
+}
+
+export default div;

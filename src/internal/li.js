@@ -1,5 +1,5 @@
-function li(items) {
-  return items.map(item => `<li>${item}</li>`);
+function li(content) {
+  return `<li>${content}</li>`;
 }
 
 export default li;

@@ -14,7 +14,7 @@ module.exports = {
   output: {
     filename: './_build/bundle.js',
     path: path.resolve(__dirname),
-    library: 'afen',
+    library: 'jsHtml',
     libraryTarget: 'var',
   },
   module: {
