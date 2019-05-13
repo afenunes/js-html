@@ -22,4 +22,4 @@ With this library you can generate html using Javascript code.
 ## State
 
 Still working on it :construction_worker:  
-Feel free to add new stuff :smile:
+Open to suggestions :smile:
